@@ -1,11 +1,11 @@
 # PGLife - Full Stack PG Finding Web Application
 
-## 📖 Introduction
+## Introduction
 **PGLife** is a responsive Full Stack web application designed to simplify the process of finding Paying Guest (PG) accommodations in major Indian cities. It serves as a bridge between PG owners and potential tenants, offering a seamless user experience from search to booking.
 
 This project was built to solve the real-world problem of unorganized hostel/PG searching by providing a clean, filterable, and image-rich interface.
 
-## 🌟 Key Features
+## Key Features
 * **Dynamic Search:** Users can browse PGs by city (Delhi, Mumbai, Bangalore, Hyderabad).
 * **Authentication System:** Secure Signup and Login with **Password Hashing (Bcrypt)** and Session Management.
 * **Smart Dashboard:** A personalized user dashboard displaying profile details, booking history, and interested properties.
@@ -14,20 +14,20 @@ This project was built to solve the real-world problem of unorganized hostel/PG 
 * **Cancellation System:** Users can cancel bookings with specific reasons, which are archived for analytics.
 * **Interactive UI:** Features a "Like/Interest" system that updates in real-time using **AJAX** without page reloads.
 
-## 🛠️ Technical Stack
+## Technical Stack
 * **Frontend:** HTML5, CSS3, JavaScript, Bootstrap 4 (Responsive Design).
 * **Backend:** Core PHP (Procedural).
 * **Database:** MySQL (Relational Database with Foreign Key constraints).
 * **AJAX:** Used for asynchronous updates (Bookings, Likes) to enhance User Experience.
 
-## 🗄️ Database Architecture
+## Database Architecture
 The application uses a normalized Relational Database (SQL) to ensure data integrity:
 * **Users:** Stores secure user credentials.
 * **Properties:** Linked to Cities.
 * **Amenities:** Linked to Properties via a bridge table (`property_amenities`) to allow many-to-many relationships.
 * **Bookings & Cancellations:** Tracks user activity and history.
 
-## 🚀 How to Run Locally
+## How to Run Locally
 
 ### Prerequisites
 * XAMPP (or WAMP/MAMP) installed.
@@ -51,12 +51,12 @@ The application uses a normalized Relational Database (SQL) to ensure data integ
     * Start Apache and MySQL in XAMPP.
     * Open `http://localhost/PGLife/index.php` in your browser.
 
-## 💡 Challenges & Learnings
+## Challenges & Learnings
 * **Database Normalization:** Learned how to efficiently structure `properties` and `amenities` to avoid data redundancy.
 * **Security:** Implemented `htmlspecialchars` to prevent XSS attacks and Prepared Statements to prevent SQL Injection.
 * **State Management:** Managed user sessions across pages (Dashboard vs Home) to control access to protected routes.
 
-## 🔮 Future Improvements
+## Future Improvements
 * Add an Admin Panel for PG owners to upload property details.
 * Integrate a Payment Gateway for advance booking fees.
 * Add a map view using Google Maps API.
